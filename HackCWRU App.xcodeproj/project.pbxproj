@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9BEB56951B0C411F0001EC73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEB56941B0C411F0001EC73 /* AppDelegate.swift */; };
+		9BEB56981B0C411F0001EC73 /* HackCWRU_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BEB56961B0C411F0001EC73 /* HackCWRU_App.xcdatamodeld */; };
+		9BEB569A1B0C411F0001EC73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEB56991B0C411F0001EC73 /* ViewController.swift */; };
+		9BEB569D1B0C411F0001EC73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEB569B1B0C411F0001EC73 /* Main.storyboard */; };
+		9BEB569F1B0C411F0001EC73 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BEB569E1B0C411F0001EC73 /* Images.xcassets */; };
+		9BEB56A21B0C411F0001EC73 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BEB56A01B0C411F0001EC73 /* LaunchScreen.xib */; };
+		9BEB56AE1B0C411F0001EC73 /* HackCWRU_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEB56AD1B0C411F0001EC73 /* HackCWRU_AppTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BEB56A81B0C411F0001EC73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BEB56871B0C411F0001EC73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BEB568E1B0C411F0001EC73;
+			remoteInfo = "HackCWRU App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9BEB568F1B0C411F0001EC73 /* HackCWRU App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HackCWRU App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BEB56931B0C411F0001EC73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BEB56941B0C411F0001EC73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9BEB56971B0C411F0001EC73 /* HackCWRU_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HackCWRU_App.xcdatamodel; sourceTree = "<group>"; };
+		9BEB56991B0C411F0001EC73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BEB569C1B0C411F0001EC73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BEB569E1B0C411F0001EC73 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9BEB56A11B0C411F0001EC73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9BEB56A71B0C411F0001EC73 /* HackCWRU AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HackCWRU AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BEB56AC1B0C411F0001EC73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BEB56AD1B0C411F0001EC73 /* HackCWRU_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackCWRU_AppTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BEB568C1B0C411F0001EC73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BEB56A41B0C411F0001EC73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BEB56861B0C411F0001EC73 = {
+			isa = PBXGroup;
+			children = (
+				9BEB56911B0C411F0001EC73 /* HackCWRU App */,
+				9BEB56AA1B0C411F0001EC73 /* HackCWRU AppTests */,
+				9BEB56901B0C411F0001EC73 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9BEB56901B0C411F0001EC73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BEB568F1B0C411F0001EC73 /* HackCWRU App.app */,
+				9BEB56A71B0C411F0001EC73 /* HackCWRU AppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BEB56911B0C411F0001EC73 /* HackCWRU App */ = {
+			isa = PBXGroup;
+			children = (
+				9BEB56941B0C411F0001EC73 /* AppDelegate.swift */,
+				9BEB56991B0C411F0001EC73 /* ViewController.swift */,
+				9BEB569B1B0C411F0001EC73 /* Main.storyboard */,
+				9BEB569E1B0C411F0001EC73 /* Images.xcassets */,
+				9BEB56A01B0C411F0001EC73 /* LaunchScreen.xib */,
+				9BEB56961B0C411F0001EC73 /* HackCWRU_App.xcdatamodeld */,
+				9BEB56921B0C411F0001EC73 /* Supporting Files */,
+			);
+			path = "HackCWRU App";
+			sourceTree = "<group>";
+		};
+		9BEB56921B0C411F0001EC73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BEB56931B0C411F0001EC73 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9BEB56AA1B0C411F0001EC73 /* HackCWRU AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9BEB56AD1B0C411F0001EC73 /* HackCWRU_AppTests.swift */,
+				9BEB56AB1B0C411F0001EC73 /* Supporting Files */,
+			);
+			path = "HackCWRU AppTests";
+			sourceTree = "<group>";
+		};
+		9BEB56AB1B0C411F0001EC73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BEB56AC1B0C411F0001EC73 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BEB568E1B0C411F0001EC73 /* HackCWRU App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BEB56B11B0C411F0001EC73 /* Build configuration list for PBXNativeTarget "HackCWRU App" */;
+			buildPhases = (
+				9BEB568B1B0C411F0001EC73 /* Sources */,
+				9BEB568C1B0C411F0001EC73 /* Frameworks */,
+				9BEB568D1B0C411F0001EC73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HackCWRU App";
+			productName = "HackCWRU App";
+			productReference = 9BEB568F1B0C411F0001EC73 /* HackCWRU App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9BEB56A61B0C411F0001EC73 /* HackCWRU AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BEB56B41B0C411F0001EC73 /* Build configuration list for PBXNativeTarget "HackCWRU AppTests" */;
+			buildPhases = (
+				9BEB56A31B0C411F0001EC73 /* Sources */,
+				9BEB56A41B0C411F0001EC73 /* Frameworks */,
+				9BEB56A51B0C411F0001EC73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BEB56A91B0C411F0001EC73 /* PBXTargetDependency */,
+			);
+			name = "HackCWRU AppTests";
+			productName = "HackCWRU AppTests";
+			productReference = 9BEB56A71B0C411F0001EC73 /* HackCWRU AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BEB56871B0C411F0001EC73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "CWRU Hacker Society";
+				TargetAttributes = {
+					9BEB568E1B0C411F0001EC73 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					9BEB56A61B0C411F0001EC73 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 9BEB568E1B0C411F0001EC73;
+					};
+				};
+			};
+			buildConfigurationList = 9BEB568A1B0C411F0001EC73 /* Build configuration list for PBXProject "HackCWRU App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BEB56861B0C411F0001EC73;
+			productRefGroup = 9BEB56901B0C411F0001EC73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BEB568E1B0C411F0001EC73 /* HackCWRU App */,
+				9BEB56A61B0C411F0001EC73 /* HackCWRU AppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BEB568D1B0C411F0001EC73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BEB569D1B0C411F0001EC73 /* Main.storyboard in Resources */,
+				9BEB56A21B0C411F0001EC73 /* LaunchScreen.xib in Resources */,
+				9BEB569F1B0C411F0001EC73 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BEB56A51B0C411F0001EC73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BEB568B1B0C411F0001EC73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BEB569A1B0C411F0001EC73 /* ViewController.swift in Sources */,
+				9BEB56951B0C411F0001EC73 /* AppDelegate.swift in Sources */,
+				9BEB56981B0C411F0001EC73 /* HackCWRU_App.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BEB56A31B0C411F0001EC73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BEB56AE1B0C411F0001EC73 /* HackCWRU_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BEB56A91B0C411F0001EC73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BEB568E1B0C411F0001EC73 /* HackCWRU App */;
+			targetProxy = 9BEB56A81B0C411F0001EC73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9BEB569B1B0C411F0001EC73 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BEB569C1B0C411F0001EC73 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9BEB56A01B0C411F0001EC73 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BEB56A11B0C411F0001EC73 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BEB56AF1B0C411F0001EC73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9BEB56B01B0C411F0001EC73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BEB56B21B0C411F0001EC73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "HackCWRU App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9BEB56B31B0C411F0001EC73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "HackCWRU App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9BEB56B51B0C411F0001EC73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HackCWRU AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackCWRU App.app/HackCWRU App";
+			};
+			name = Debug;
+		};
+		9BEB56B61B0C411F0001EC73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HackCWRU AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackCWRU App.app/HackCWRU App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BEB568A1B0C411F0001EC73 /* Build configuration list for PBXProject "HackCWRU App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BEB56AF1B0C411F0001EC73 /* Debug */,
+				9BEB56B01B0C411F0001EC73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BEB56B11B0C411F0001EC73 /* Build configuration list for PBXNativeTarget "HackCWRU App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BEB56B21B0C411F0001EC73 /* Debug */,
+				9BEB56B31B0C411F0001EC73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9BEB56B41B0C411F0001EC73 /* Build configuration list for PBXNativeTarget "HackCWRU AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BEB56B51B0C411F0001EC73 /* Debug */,
+				9BEB56B61B0C411F0001EC73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9BEB56961B0C411F0001EC73 /* HackCWRU_App.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9BEB56971B0C411F0001EC73 /* HackCWRU_App.xcdatamodel */,
+			);
+			currentVersion = 9BEB56971B0C411F0001EC73 /* HackCWRU_App.xcdatamodel */;
+			path = HackCWRU_App.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9BEB56871B0C411F0001EC73 /* Project object */;
+}
