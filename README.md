@@ -63,4 +63,4 @@ I highly recommend getting Apple's free *The Swift Programming Language* book in
 Here's an example Swift repo if you want to see some sample code: https://github.com/sachinkesiraju/SwiftExample
 
 ##And remember, have fun with it!
-(http://new2.fjcdn.com/comments/I+_aed86a462d3a80ec88671752cae24cbf.jpg)
+![neutron](http://new2.fjcdn.com/comments/I+_aed86a462d3a80ec88671752cae24cbf.jpg)
