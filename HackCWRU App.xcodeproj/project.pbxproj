@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B70BBB61B0D813B0008F959 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B70BBB51B0D813B0008F959 /* Crashlytics.framework */; };
 		9BEB56951B0C411F0001EC73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEB56941B0C411F0001EC73 /* AppDelegate.swift */; };
 		9BEB56981B0C411F0001EC73 /* HackCWRU_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BEB56961B0C411F0001EC73 /* HackCWRU_App.xcdatamodeld */; };
 		9BEB569A1B0C411F0001EC73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEB56991B0C411F0001EC73 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B70BBB51B0D813B0008F959 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		9BEB568F1B0C411F0001EC73 /* HackCWRU App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HackCWRU App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BEB56931B0C411F0001EC73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BEB56941B0C411F0001EC73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B70BBB61B0D813B0008F959 /* Crashlytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +67,7 @@
 				9BEB56911B0C411F0001EC73 /* HackCWRU App */,
 				9BEB56AA1B0C411F0001EC73 /* HackCWRU AppTests */,
 				9BEB56901B0C411F0001EC73 /* Products */,
+				9B70BBB51B0D813B0008F959 /* Crashlytics.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +129,7 @@
 				9BEB568B1B0C411F0001EC73 /* Sources */,
 				9BEB568C1B0C411F0001EC73 /* Frameworks */,
 				9BEB568D1B0C411F0001EC73 /* Resources */,
+				9B70BBA81B0D7C300008F959 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -210,6 +215,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9B70BBA81B0D7C300008F959 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run 479c2e2984369c33402ef64007433deaa5acebe9 e8afa25dddc84c086b08a738f50370285c70d184f08f51c0b705a0e5885aef66";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9BEB568B1B0C411F0001EC73 /* Sources */ = {
@@ -346,6 +367,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/gleichsnerd/.Trash,
+				);
 				INFOPLIST_FILE = "HackCWRU App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +383,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					/Users/gleichsnerd/.Trash,
+				);
 				INFOPLIST_FILE = "HackCWRU App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +447,7 @@
 				9BEB56B31B0C411F0001EC73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9BEB56B41B0C411F0001EC73 /* Build configuration list for PBXNativeTarget "HackCWRU AppTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +456,7 @@
 				9BEB56B61B0C411F0001EC73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
