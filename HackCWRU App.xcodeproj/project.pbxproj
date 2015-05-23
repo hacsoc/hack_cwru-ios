@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		9B70BBB61B0D813B0008F959 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B70BBB51B0D813B0008F959 /* Crashlytics.framework */; };
+		9B70BBBA1B1054110008F959 /* HackathonScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B70BBB91B1054110008F959 /* HackathonScheduleController.swift */; };
+		9B70BBBC1B105BE00008F959 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B70BBBB1B105BE00008F959 /* settings.png */; };
+		9B70BBBE1B105F600008F959 /* UserStaticPagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B70BBBD1B105F600008F959 /* UserStaticPagesController.swift */; };
 		9BEB56951B0C411F0001EC73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEB56941B0C411F0001EC73 /* AppDelegate.swift */; };
 		9BEB56981B0C411F0001EC73 /* HackCWRU_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BEB56961B0C411F0001EC73 /* HackCWRU_App.xcdatamodeld */; };
-		9BEB569A1B0C411F0001EC73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEB56991B0C411F0001EC73 /* ViewController.swift */; };
+		9BEB569A1B0C411F0001EC73 /* UserTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEB56991B0C411F0001EC73 /* UserTabBarController.swift */; };
 		9BEB569D1B0C411F0001EC73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEB569B1B0C411F0001EC73 /* Main.storyboard */; };
 		9BEB569F1B0C411F0001EC73 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BEB569E1B0C411F0001EC73 /* Images.xcassets */; };
 		9BEB56A21B0C411F0001EC73 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BEB56A01B0C411F0001EC73 /* LaunchScreen.xib */; };
@@ -29,11 +32,14 @@
 
 /* Begin PBXFileReference section */
 		9B70BBB51B0D813B0008F959 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		9B70BBB91B1054110008F959 /* HackathonScheduleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HackathonScheduleController.swift; sourceTree = "<group>"; };
+		9B70BBBB1B105BE00008F959 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		9B70BBBD1B105F600008F959 /* UserStaticPagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserStaticPagesController.swift; sourceTree = "<group>"; };
 		9BEB568F1B0C411F0001EC73 /* HackCWRU App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HackCWRU App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BEB56931B0C411F0001EC73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BEB56941B0C411F0001EC73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BEB56971B0C411F0001EC73 /* HackCWRU_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HackCWRU_App.xcdatamodel; sourceTree = "<group>"; };
-		9BEB56991B0C411F0001EC73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BEB56991B0C411F0001EC73 /* UserTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTabBarController.swift; sourceTree = "<group>"; };
 		9BEB569C1B0C411F0001EC73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BEB569E1B0C411F0001EC73 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9BEB56A11B0C411F0001EC73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -84,11 +90,14 @@
 			isa = PBXGroup;
 			children = (
 				9BEB56941B0C411F0001EC73 /* AppDelegate.swift */,
-				9BEB56991B0C411F0001EC73 /* ViewController.swift */,
+				9BEB56991B0C411F0001EC73 /* UserTabBarController.swift */,
+				9B70BBBD1B105F600008F959 /* UserStaticPagesController.swift */,
+				9B70BBB91B1054110008F959 /* HackathonScheduleController.swift */,
 				9BEB569B1B0C411F0001EC73 /* Main.storyboard */,
 				9BEB569E1B0C411F0001EC73 /* Images.xcassets */,
 				9BEB56A01B0C411F0001EC73 /* LaunchScreen.xib */,
 				9BEB56961B0C411F0001EC73 /* HackCWRU_App.xcdatamodeld */,
+				9B70BBBB1B105BE00008F959 /* settings.png */,
 				9BEB56921B0C411F0001EC73 /* Supporting Files */,
 			);
 			path = "HackCWRU App";
@@ -201,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B70BBBC1B105BE00008F959 /* settings.png in Resources */,
 				9BEB569D1B0C411F0001EC73 /* Main.storyboard in Resources */,
 				9BEB56A21B0C411F0001EC73 /* LaunchScreen.xib in Resources */,
 				9BEB569F1B0C411F0001EC73 /* Images.xcassets in Resources */,
@@ -237,8 +247,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BEB569A1B0C411F0001EC73 /* ViewController.swift in Sources */,
+				9B70BBBE1B105F600008F959 /* UserStaticPagesController.swift in Sources */,
+				9BEB569A1B0C411F0001EC73 /* UserTabBarController.swift in Sources */,
 				9BEB56951B0C411F0001EC73 /* AppDelegate.swift in Sources */,
+				9B70BBBA1B1054110008F959 /* HackathonScheduleController.swift in Sources */,
 				9BEB56981B0C411F0001EC73 /* HackCWRU_App.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
