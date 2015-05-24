@@ -8,38 +8,62 @@
 
 import UIKit
 
+/* UserTabBarController
+ * Holds all of the controllers for the various main pages (StaticPages,
+ * Mentor Request, Staff Request, Group Finder, etc).
+ */
 class UserTabBarController: UITabBarController {
-
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        self.createChildrenTabs()
-        // Do any additional setup after loading the view, typically from a nib.
+        //Make sure nothing will auto adjust to available space. 
+        //We're running a tight ship here.
+        self.automaticallyAdjustsScrollViewInsets = false
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        //If this is our first appearance or we've dumped memory, recreate the controllers
+        if self.viewControllers == nil {
+            self.createChildrenTabs()
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        //If we aren't presented, we can drop our controllers for now
+        if self.view.window == nil {
+            self.viewControllers = nil
+            println("Doing a memory dump in UserTabBarController. How the fuck did you manage that?")
+        }
     }
     
-    //Create tabs for controller
+    
+    /*Create tabs for controller*/
+    
+    //When creating a new tab, put your setup into a helper method and call it here
     func createChildrenTabs() {
         var tabControllers = [UIViewController]()
         
+        //Append your tab to teh controllers, yo
         tabControllers.append(self.createStaticPagesTab())
         
         self.setViewControllers(tabControllers, animated: true)
-        
-//        self.presentViewController(self.createStaticPagesTab(), animated: true, completion: nil)
     }
     
-    //Children Tab creation helpers
     
-    //Create the static pages
+    /*Children Tab creation helpers*/
+    
+    //Create the UIPageViewController for StaticPages
     func createStaticPagesTab() -> UIViewController {
+        
         let pageViewController:UserStaticPagesController = UserStaticPagesController(
             transitionStyle: UIPageViewControllerTransitionStyle.Scroll,
             navigationOrientation: UIPageViewControllerNavigationOrientation.Horizontal,
-            options: nil)
+            options: nil,
+            frame: CGRect(x: 0, y: NAVIGATION_BAR_HEIGHT + STATUS_BAR_HEIGHT, width: self.view.frame.width, height: self.view.frame.height - STATUS_BAR_HEIGHT - NAVIGATION_BAR_HEIGHT - TAB_BAR_HEIGHT)
+        )
+
+        //Set the
         pageViewController.tabBarItem = UITabBarItem(title: "Info", image: UIImage(named: "settings") , selectedImage: UIImage(named: "settings"))
         
         return pageViewController
