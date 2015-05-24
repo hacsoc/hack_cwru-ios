@@ -20,7 +20,7 @@
 		9BEB569D1B0C411F0001EC73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BEB569B1B0C411F0001EC73 /* Main.storyboard */; };
 		9BEB569F1B0C411F0001EC73 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BEB569E1B0C411F0001EC73 /* Images.xcassets */; };
 		9BEB56A21B0C411F0001EC73 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BEB56A01B0C411F0001EC73 /* LaunchScreen.xib */; };
-		9BEB56AE1B0C411F0001EC73 /* HackCWRU_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEB56AD1B0C411F0001EC73 /* HackCWRU_AppTests.swift */; };
+		9BEB56AE1B0C411F0001EC73 /* HackCWRUTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEB56AD1B0C411F0001EC73 /* HackCWRUTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,9 +46,9 @@
 		9BEB569C1B0C411F0001EC73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BEB569E1B0C411F0001EC73 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9BEB56A11B0C411F0001EC73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		9BEB56A71B0C411F0001EC73 /* HackCWRU AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HackCWRU AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BEB56A71B0C411F0001EC73 /* HackCWRUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackCWRUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BEB56AC1B0C411F0001EC73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9BEB56AD1B0C411F0001EC73 /* HackCWRU_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackCWRU_AppTests.swift; sourceTree = "<group>"; };
+		9BEB56AD1B0C411F0001EC73 /* HackCWRUTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackCWRUTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +73,8 @@
 		9BEB56861B0C411F0001EC73 = {
 			isa = PBXGroup;
 			children = (
-				9BEB56911B0C411F0001EC73 /* HackCWRU App */,
-				9BEB56AA1B0C411F0001EC73 /* HackCWRU AppTests */,
+				9BEB56911B0C411F0001EC73 /* HackCWRU */,
+				9BEB56AA1B0C411F0001EC73 /* HackCWRUTests */,
 				9BEB56901B0C411F0001EC73 /* Products */,
 				9B70BBB51B0D813B0008F959 /* Crashlytics.framework */,
 			);
@@ -84,12 +84,12 @@
 			isa = PBXGroup;
 			children = (
 				9BEB568F1B0C411F0001EC73 /* HackCWRU App.app */,
-				9BEB56A71B0C411F0001EC73 /* HackCWRU AppTests.xctest */,
+				9BEB56A71B0C411F0001EC73 /* HackCWRUTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9BEB56911B0C411F0001EC73 /* HackCWRU App */ = {
+		9BEB56911B0C411F0001EC73 /* HackCWRU */ = {
 			isa = PBXGroup;
 			children = (
 				9BEB56941B0C411F0001EC73 /* AppDelegate.swift */,
@@ -103,6 +103,7 @@
 				9B70BBBB1B105BE00008F959 /* settings.png */,
 				9BEB56921B0C411F0001EC73 /* Supporting Files */,
 			);
+			name = HackCWRU;
 			path = "HackCWRU App";
 			sourceTree = "<group>";
 		};
@@ -114,12 +115,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9BEB56AA1B0C411F0001EC73 /* HackCWRU AppTests */ = {
+		9BEB56AA1B0C411F0001EC73 /* HackCWRUTests */ = {
 			isa = PBXGroup;
 			children = (
-				9BEB56AD1B0C411F0001EC73 /* HackCWRU_AppTests.swift */,
+				9BEB56AD1B0C411F0001EC73 /* HackCWRUTests.swift */,
 				9BEB56AB1B0C411F0001EC73 /* Supporting Files */,
 			);
+			name = HackCWRUTests;
 			path = "HackCWRU AppTests";
 			sourceTree = "<group>";
 		};
@@ -134,9 +136,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9BEB568E1B0C411F0001EC73 /* HackCWRU App */ = {
+		9BEB568E1B0C411F0001EC73 /* HackCWRU */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9BEB56B11B0C411F0001EC73 /* Build configuration list for PBXNativeTarget "HackCWRU App" */;
+			buildConfigurationList = 9BEB56B11B0C411F0001EC73 /* Build configuration list for PBXNativeTarget "HackCWRU" */;
 			buildPhases = (
 				9BEB568B1B0C411F0001EC73 /* Sources */,
 				9BEB568C1B0C411F0001EC73 /* Frameworks */,
@@ -147,14 +149,14 @@
 			);
 			dependencies = (
 			);
-			name = "HackCWRU App";
+			name = HackCWRU;
 			productName = "HackCWRU App";
 			productReference = 9BEB568F1B0C411F0001EC73 /* HackCWRU App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9BEB56A61B0C411F0001EC73 /* HackCWRU AppTests */ = {
+		9BEB56A61B0C411F0001EC73 /* HackCWRUTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9BEB56B41B0C411F0001EC73 /* Build configuration list for PBXNativeTarget "HackCWRU AppTests" */;
+			buildConfigurationList = 9BEB56B41B0C411F0001EC73 /* Build configuration list for PBXNativeTarget "HackCWRUTests" */;
 			buildPhases = (
 				9BEB56A31B0C411F0001EC73 /* Sources */,
 				9BEB56A41B0C411F0001EC73 /* Frameworks */,
@@ -165,9 +167,9 @@
 			dependencies = (
 				9BEB56A91B0C411F0001EC73 /* PBXTargetDependency */,
 			);
-			name = "HackCWRU AppTests";
+			name = HackCWRUTests;
 			productName = "HackCWRU AppTests";
-			productReference = 9BEB56A71B0C411F0001EC73 /* HackCWRU AppTests.xctest */;
+			productReference = 9BEB56A71B0C411F0001EC73 /* HackCWRUTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -189,7 +191,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9BEB568A1B0C411F0001EC73 /* Build configuration list for PBXProject "HackCWRU App" */;
+			buildConfigurationList = 9BEB568A1B0C411F0001EC73 /* Build configuration list for PBXProject "HackCWRU" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -202,8 +204,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9BEB568E1B0C411F0001EC73 /* HackCWRU App */,
-				9BEB56A61B0C411F0001EC73 /* HackCWRU AppTests */,
+				9BEB568E1B0C411F0001EC73 /* HackCWRU */,
+				9BEB56A61B0C411F0001EC73 /* HackCWRUTests */,
 			);
 		};
 /* End PBXProject section */
@@ -263,7 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B70BBC11B118E2E0008F959 /* UserTabBarController.swift in Sources */,
-				9BEB56AE1B0C411F0001EC73 /* HackCWRU_AppTests.swift in Sources */,
+				9BEB56AE1B0C411F0001EC73 /* HackCWRUTests.swift in Sources */,
 				49FEF73E1B1274FB005B55E2 /* AttendeeInformationController.swift in Sources */,
 				9B70BBC31B118E380008F959 /* DummyViewController.swift in Sources */,
 			);
@@ -274,7 +276,7 @@
 /* Begin PBXTargetDependency section */
 		9BEB56A91B0C411F0001EC73 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9BEB568E1B0C411F0001EC73 /* HackCWRU App */;
+			target = 9BEB568E1B0C411F0001EC73 /* HackCWRU */;
 			targetProxy = 9BEB56A81B0C411F0001EC73 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -340,6 +342,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_HOST = "";
 			};
 			name = Debug;
 		};
@@ -376,6 +379,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				TEST_HOST = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -427,7 +431,7 @@
 				INFOPLIST_FILE = "HackCWRU AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackCWRU App.app/HackCWRU App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackCWRU.app/HackCWRU";
 			};
 			name = Debug;
 		};
@@ -442,14 +446,14 @@
 				INFOPLIST_FILE = "HackCWRU AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackCWRU App.app/HackCWRU App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackCWRU.app/HackCWRU";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9BEB568A1B0C411F0001EC73 /* Build configuration list for PBXProject "HackCWRU App" */ = {
+		9BEB568A1B0C411F0001EC73 /* Build configuration list for PBXProject "HackCWRU" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9BEB56AF1B0C411F0001EC73 /* Debug */,
@@ -458,7 +462,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9BEB56B11B0C411F0001EC73 /* Build configuration list for PBXNativeTarget "HackCWRU App" */ = {
+		9BEB56B11B0C411F0001EC73 /* Build configuration list for PBXNativeTarget "HackCWRU" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9BEB56B21B0C411F0001EC73 /* Debug */,
@@ -467,7 +471,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9BEB56B41B0C411F0001EC73 /* Build configuration list for PBXNativeTarget "HackCWRU AppTests" */ = {
+		9BEB56B41B0C411F0001EC73 /* Build configuration list for PBXNativeTarget "HackCWRUTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9BEB56B51B0C411F0001EC73 /* Debug */,
