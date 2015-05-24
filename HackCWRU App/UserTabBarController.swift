@@ -63,7 +63,8 @@ class UserTabBarController: UITabBarController {
             frame: CGRect(x: 0, y: NAVIGATION_BAR_HEIGHT + STATUS_BAR_HEIGHT, width: self.view.frame.width, height: self.view.frame.height - STATUS_BAR_HEIGHT - NAVIGATION_BAR_HEIGHT - TAB_BAR_HEIGHT)
         )
 
-        //Set the
+        //Set the icon for the TabViewController to use
+        //TODO: Insert real icon for the StaticPages. And come up with a better name than StaticPages.
         pageViewController.tabBarItem = UITabBarItem(title: "Info", image: UIImage(named: "settings") , selectedImage: UIImage(named: "settings"))
         
         return pageViewController

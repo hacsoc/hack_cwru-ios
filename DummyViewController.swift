@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+/* Uuuuhhhhh
+ */
 class DummyViewController: UIViewController {
     
     var pageIndex:Int?
@@ -29,7 +31,4 @@ class DummyViewController: UIViewController {
         self.view.frame = frame!
         self.view.backgroundColor = color!
     }
-    
-    
-    
 }
