@@ -8,6 +8,12 @@
 
 import UIKit
 
+// These are all pixel height constants for the NavBar(top, thick),
+// TabBar(Bottom), and StatusBar(Very top, detail stuff)
+let NAVIGATION_BAR_HEIGHT:CGFloat = 44
+let TAB_BAR_HEIGHT:CGFloat = 49
+let STATUS_BAR_HEIGHT:CGFloat = 20
+
 /* UserTabBarController
  * Holds all of the controllers for the various main pages (StaticPages,
  * Mentor Request, Staff Request, Group Finder, etc).
@@ -31,8 +37,8 @@ class UserTabBarController: UITabBarController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         //If we aren't presented, we can drop our controllers for now
-        if self.view.window == nil {
-            self.viewControllers = nil
+        if self.isViewLoaded() && self.view.window == nil {
+            self.viewControllers = [UIViewController]()
             println("Doing a memory dump in UserTabBarController. How the fuck did you manage that?")
         }
     }

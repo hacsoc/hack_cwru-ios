@@ -13,5 +13,53 @@
             stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HackCWRU AppTests/HackCWRU_AppTests.swift"
+            timestampString = "454190270.822499"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "testDummyController()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HackCWRU_AppTests.HackCWRU_AppTests.testDummyController (HackCWRU_AppTests.HackCWRU_AppTests)() -&gt; ()"
+                  moduleName = "HackCWRU AppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gleichsnerd/Developer/Projects/HacSoc/HackCWRU/HackCWRU-ios/HackCWRU%20App/HackCWRU%20AppTests/HackCWRU_AppTests.swift"
+                  timestampString = "454136948.712982"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "541">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HackCWRU_AppTests.HackCWRU_AppTests.(testDummyController (HackCWRU_AppTests.HackCWRU_AppTests) -&gt; () -&gt; ()).(implicit closure #1)"
+                  moduleName = "HackCWRU AppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gleichsnerd/Developer/Projects/HacSoc/HackCWRU/HackCWRU-ios/HackCWRU%20App/HackCWRU%20AppTests/HackCWRU_AppTests.swift"
+                  timestampString = "454136948.713183"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "63">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
