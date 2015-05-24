@@ -1,5 +1,5 @@
 //
-//  UserStaticPagesController.swift
+//  AttendeeInformationController.swift
 //  HackCWRU App
 //
 //  Created by Adam Gleichsner on 5/23/15.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-/* UserStaticPagesController
+/* AttendeeInformationController
  * UIPageViewController to hold all of the StaticPages (i.e. Hackathon Schedule,
  * ChallengePost and EventBrite links, Menu, Sponsors, etc.)
  */
-class UserStaticPagesController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
+class AttendeeInformationController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     
     var controllers = [UIViewController]()
     var frame:CGRect?
@@ -47,7 +47,7 @@ class UserStaticPagesController: UIPageViewController, UIPageViewControllerDeleg
         //If we aren't presented, we can drop our controllers for now
         if self.isViewLoaded() && self.view.window == nil {
             self.controllers = [UIPageViewController]()
-            println("Doing a memory dump in UserStaticPagesController. Good fucking job.")
+            println("Doing a memory dump in AttendeeInformationController. Good fucking job.")
         }
     }
     

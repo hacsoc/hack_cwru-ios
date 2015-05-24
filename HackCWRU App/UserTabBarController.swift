@@ -51,7 +51,7 @@ class UserTabBarController: UITabBarController {
         var tabControllers = [UIViewController]()
         
         //Append your tab to teh controllers, yo
-        tabControllers.append(self.createStaticPagesTab())
+        tabControllers.append(self.createAttendeeInformationTab())
         
         self.setViewControllers(tabControllers, animated: true)
     }
@@ -60,9 +60,9 @@ class UserTabBarController: UITabBarController {
     /*Children Tab creation helpers*/
     
     //Create the UIPageViewController for StaticPages
-    func createStaticPagesTab() -> UIViewController {
+    func createAttendeeInformationTab() -> UIViewController {
         
-        let pageViewController:UserStaticPagesController = UserStaticPagesController(
+        let pageViewController:AttendeeInformationController = AttendeeInformationController(
             transitionStyle: UIPageViewControllerTransitionStyle.Scroll,
             navigationOrientation: UIPageViewControllerNavigationOrientation.Horizontal,
             options: nil,
@@ -71,7 +71,7 @@ class UserTabBarController: UITabBarController {
 
         //Set the icon for the TabViewController to use
         //TODO: Insert real icon for the StaticPages. And come up with a better name than StaticPages.
-        pageViewController.tabBarItem = UITabBarItem(title: "Info", image: UIImage(named: "settings") , selectedImage: UIImage(named: "settings"))
+        pageViewController.tabBarItem = UITabBarItem(title: "Attendee Information", image: UIImage(named: "settings") , selectedImage: UIImage(named: "settings"))
         
         return pageViewController
     }

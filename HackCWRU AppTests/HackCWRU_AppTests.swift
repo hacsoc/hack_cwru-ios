@@ -44,7 +44,7 @@ class HackCWRU_AppTests: XCTestCase {
     func testUserStaticPagesController() {
         let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         
-        var statics = UserStaticPagesController(transitionStyle: UIPageViewControllerTransitionStyle.Scroll, navigationOrientation: UIPageViewControllerNavigationOrientation.Horizontal, options: nil, frame: frame)
+        var statics = AttendeeInformationController(transitionStyle: UIPageViewControllerTransitionStyle.Scroll, navigationOrientation: UIPageViewControllerNavigationOrientation.Horizontal, options: nil, frame: frame)
         
         XCTAssert(statics.frame == frame, "Didn't set frame")
         
@@ -78,8 +78,8 @@ class HackCWRU_AppTests: XCTestCase {
         
         var tabs = UserTabBarController()
         
-        let statics = tabs.createStaticPagesTab()
-        XCTAssert(statics.isKindOfClass(UserStaticPagesController), "Didn't make a UserStaticPagesController")
+        let statics = tabs.createAttendeeInformationTab()
+        XCTAssert(statics.isKindOfClass(AttendeeInformationController), "Didn't make a UserStaticPagesController")
         
         tabs.createChildrenTabs()
         XCTAssert(tabs.viewControllers?.count > 0, "Didn't create any children tabs")
