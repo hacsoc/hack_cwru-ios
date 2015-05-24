@@ -23,7 +23,7 @@
         <!--User Tab Bar Controller-->
         <scene sceneID="qmt-EV-cbu">
             <objects>
-                <tabBarController id="xnN-H3-o8j" customClass="UserTabBarController" customModule="HackCWRU_App" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController autoresizesArchivedViewToFullSize="NO" id="xnN-H3-o8j" customClass="UserTabBarController" customModule="HackCWRU_App" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="JqT-cG-3yk"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="B8e-jJ-JmJ">
