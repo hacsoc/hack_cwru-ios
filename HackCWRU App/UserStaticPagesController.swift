@@ -45,9 +45,8 @@ class UserStaticPagesController: UIPageViewController, UIPageViewControllerDeleg
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         //If we aren't presented, we can drop our controllers for now
-        if self.view.window == nil {
+        if self.isViewLoaded() && self.view.window == nil {
             self.controllers = [UIPageViewController]()
-            self.setViewControllers([], direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
             println("Doing a memory dump in UserStaticPagesController. Good fucking job.")
         }
     }
@@ -91,7 +90,6 @@ class UserStaticPagesController: UIPageViewController, UIPageViewControllerDeleg
     //Disable autoresizing because that shit is dumb sometimes
     func disableControllerResizing(controllers:[UIViewController]) {
         for vc in controllers {
-            vc.view.autoresizingMask = UIViewAutoresizing.None
             vc.automaticallyAdjustsScrollViewInsets = false
         }
     }

@@ -10,12 +10,6 @@ import UIKit
 import CoreData
 import Crashlytics
 
-// These are all pixel height constants for the NavBar(top, thick),
-// TabBar(Bottom), and StatusBar(Very top, detail stuff)
-let NAVIGATION_BAR_HEIGHT:CGFloat = 44
-let TAB_BAR_HEIGHT:CGFloat = 49
-let STATUS_BAR_HEIGHT:CGFloat = 20
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
