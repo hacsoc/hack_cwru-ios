@@ -33,6 +33,8 @@ class AnnouncmentsController: UIViewController {
         var data:NSData = NSURLConnection.sendSynchronousRequest(request, returningResponse: response, error: error)!
         var json:NSArray =
             NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSArray
+        var announcements = Announcement.collectionFromJSON(json)
+        println(announcements[0].id)
     }
     
 }
