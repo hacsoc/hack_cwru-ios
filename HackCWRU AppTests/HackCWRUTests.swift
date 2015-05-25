@@ -41,7 +41,7 @@ class HackCWRU_AppTests: XCTestCase {
         XCTAssert(dummy.view.backgroundColor == red, "Didn't set view background color upon presentation")
     }
     
-    func testUserStaticPagesController() {
+    func testAttendeeInformationController() {
         let frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         
         var statics = AttendeeInformationController(transitionStyle: UIPageViewControllerTransitionStyle.Scroll, navigationOrientation: UIPageViewControllerNavigationOrientation.Horizontal, options: nil, frame: frame)
