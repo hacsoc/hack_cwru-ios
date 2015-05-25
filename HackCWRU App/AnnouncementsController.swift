@@ -9,8 +9,9 @@
 import UIKit
 import Foundation
 
-class AnnouncmentsController: UIViewController {
+class AnnouncmentsController: UITableViewController {
     var frame:CGRect?
+    var announcements:[Announcement]?
     
     init(options: [NSObject : AnyObject]?, frame:CGRect) {
         super.init(nibName: nil, bundle: nil)
@@ -28,8 +29,25 @@ class AnnouncmentsController: UIViewController {
         // This requires a rails server to be hosting the backend on your dev machine.
         let url = "http://localhost:3000/announcements.json"
         var json:NSArray = JSONHelper.parse(HTTPHelper.get(url)) as! NSArray
-        var announcements = Announcement.collectionFromJSON(json)
-        // TODO: actually put something on the screen
+        announcements = Announcement.collectionFromJSON(json)
+        self.view.frame = frame!
+        self.tableView.reloadData()
+    }
+    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(tableView:UITableView, numberOfRowsInSection section:Int) -> Int {
+        return announcements!.count
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell:UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "")
+        let announcement:Announcement = announcements![indexPath.row]
+        cell.textLabel!.text = "\(announcement.id)"
+        
+        return cell
     }
     
 }
