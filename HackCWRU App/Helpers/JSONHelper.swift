@@ -9,6 +9,10 @@
 import Foundation
 
 class JSONHelper {
+    // Parses an NSData object as JSON. Returns an AnyObject. Caller is responsible
+    // for knowing how the data should be structured and casting appropriately.
+    //
+    // :data: - the data to be parsed.
     class func parse(data:NSData) -> AnyObject {
         return NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil)!
     }
