@@ -13,6 +13,10 @@
 		49FEF74D1B12D639005B55E2 /* AnnouncementsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FEF74B1B12D639005B55E2 /* AnnouncementsController.swift */; };
 		49FEF7581B12E92C005B55E2 /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FEF7571B12E92C005B55E2 /* Announcement.swift */; };
 		49FEF7591B12E92C005B55E2 /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FEF7571B12E92C005B55E2 /* Announcement.swift */; };
+		49FEF7601B12ECF2005B55E2 /* HTTPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FEF75F1B12ECF2005B55E2 /* HTTPHelper.swift */; };
+		49FEF7611B12ECF2005B55E2 /* HTTPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FEF75F1B12ECF2005B55E2 /* HTTPHelper.swift */; };
+		49FEF7631B12F61F005B55E2 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FEF7621B12F61F005B55E2 /* JSONHelper.swift */; };
+		49FEF7641B12F61F005B55E2 /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FEF7621B12F61F005B55E2 /* JSONHelper.swift */; };
 		9B70BBB61B0D813B0008F959 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B70BBB51B0D813B0008F959 /* Crashlytics.framework */; };
 		9B70BBBC1B105BE00008F959 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B70BBBB1B105BE00008F959 /* settings.png */; };
 		9B70BBC01B114DAC0008F959 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B70BBBF1B114DAC0008F959 /* DummyViewController.swift */; };
@@ -41,6 +45,8 @@
 		49FEF73C1B1274FB005B55E2 /* AttendeeInformationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendeeInformationController.swift; sourceTree = "<group>"; };
 		49FEF74B1B12D639005B55E2 /* AnnouncementsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementsController.swift; sourceTree = "<group>"; };
 		49FEF7571B12E92C005B55E2 /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
+		49FEF75F1B12ECF2005B55E2 /* HTTPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPHelper.swift; sourceTree = "<group>"; };
+		49FEF7621B12F61F005B55E2 /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
 		9B70BBB51B0D813B0008F959 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		9B70BBBB1B105BE00008F959 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		9B70BBBF1B114DAC0008F959 /* DummyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DummyViewController.swift; path = ../DummyViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +90,15 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		49FEF75B1B12ECCB005B55E2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				49FEF75F1B12ECF2005B55E2 /* HTTPHelper.swift */,
+				49FEF7621B12F61F005B55E2 /* JSONHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		9BEB56861B0C411F0001EC73 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +121,7 @@
 		9BEB56911B0C411F0001EC73 /* HackCWRU */ = {
 			isa = PBXGroup;
 			children = (
+				49FEF75B1B12ECCB005B55E2 /* Helpers */,
 				49FEF7561B12E91E005B55E2 /* Models */,
 				9BEB56941B0C411F0001EC73 /* AppDelegate.swift */,
 				49FEF74B1B12D639005B55E2 /* AnnouncementsController.swift */,
@@ -271,6 +287,8 @@
 				49FEF73D1B1274FB005B55E2 /* AttendeeInformationController.swift in Sources */,
 				9BEB569A1B0C411F0001EC73 /* UserTabBarController.swift in Sources */,
 				49FEF74C1B12D639005B55E2 /* AnnouncementsController.swift in Sources */,
+				49FEF7631B12F61F005B55E2 /* JSONHelper.swift in Sources */,
+				49FEF7601B12ECF2005B55E2 /* HTTPHelper.swift in Sources */,
 				9BEB56951B0C411F0001EC73 /* AppDelegate.swift in Sources */,
 				49FEF7581B12E92C005B55E2 /* Announcement.swift in Sources */,
 				9B70BBC01B114DAC0008F959 /* DummyViewController.swift in Sources */,
@@ -283,9 +301,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				49FEF7591B12E92C005B55E2 /* Announcement.swift in Sources */,
+				49FEF7611B12ECF2005B55E2 /* HTTPHelper.swift in Sources */,
 				9B70BBC11B118E2E0008F959 /* UserTabBarController.swift in Sources */,
 				9BEB56AE1B0C411F0001EC73 /* HackCWRUTests.swift in Sources */,
 				49FEF74D1B12D639005B55E2 /* AnnouncementsController.swift in Sources */,
+				49FEF7641B12F61F005B55E2 /* JSONHelper.swift in Sources */,
 				49FEF73E1B1274FB005B55E2 /* AttendeeInformationController.swift in Sources */,
 				9B70BBC31B118E380008F959 /* DummyViewController.swift in Sources */,
 			);
