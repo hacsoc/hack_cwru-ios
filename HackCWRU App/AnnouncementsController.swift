@@ -26,15 +26,10 @@ class AnnouncmentsController: UIViewController {
     override func viewDidLoad() {
         // TODO: use preprocessor flags to swap out a real URL for production.
         // This requires a rails server to be hosting the backend on your dev machine.
-        let url = NSURL(string: "http://localhost:3000/announcements.json")
-        let request:NSURLRequest = NSURLRequest(URL: url!)
-        var response:AutoreleasingUnsafeMutablePointer<NSURLResponse?> = nil
-        var error:NSErrorPointer = nil
-        var data:NSData = NSURLConnection.sendSynchronousRequest(request, returningResponse: response, error: error)!
-        var json:NSArray =
-            NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSArray
+        let url = "http://localhost:3000/announcements.json"
+        var json:NSArray = JSONHelper.parse(HTTPHelper.get(url)) as! NSArray
         var announcements = Announcement.collectionFromJSON(json)
-        println(announcements[0].id)
+        // TODO: actually put something on the screen
     }
     
 }
