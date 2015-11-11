@@ -39,7 +39,7 @@ class UserTabBarController: UITabBarController {
         //If we aren't presented, we can drop our controllers for now
         if self.isViewLoaded() && self.view.window == nil {
             self.viewControllers = [UIViewController]()
-            println("Doing a memory dump in UserTabBarController. How the fuck did you manage that?")
+            print("Doing a memory dump in UserTabBarController. How the fuck did you manage that?")
         }
     }
     
