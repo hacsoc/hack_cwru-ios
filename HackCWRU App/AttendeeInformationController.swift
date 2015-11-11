@@ -18,7 +18,7 @@ class AttendeeInformationController: UIPageViewController, UIPageViewControllerD
     var frame:CGRect?
     
     //Custom initializer to send in a frame yay
-    init(transitionStyle style: UIPageViewControllerTransitionStyle, navigationOrientation: UIPageViewControllerNavigationOrientation, options: [NSObject : AnyObject]?, frame:CGRect) {
+    init(transitionStyle style: UIPageViewControllerTransitionStyle, navigationOrientation: UIPageViewControllerNavigationOrientation, options: [String : AnyObject]?, frame:CGRect) {
         
         super.init(transitionStyle: style, navigationOrientation: navigationOrientation, options: options)
         
@@ -31,7 +31,7 @@ class AttendeeInformationController: UIPageViewController, UIPageViewControllerD
 
     //Required by Swift. Why? Because.
     required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        super.init(coder: aDecoder)!
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -47,7 +47,7 @@ class AttendeeInformationController: UIPageViewController, UIPageViewControllerD
         //If we aren't presented, we can drop our controllers for now
         if self.isViewLoaded() && self.view.window == nil {
             self.controllers = [UIPageViewController]()
-            println("Doing a memory dump in AttendeeInformationController. Good fucking job.")
+            print("Doing a memory dump in AttendeeInformationController. Good fucking job.")
         }
     }
     
