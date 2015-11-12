@@ -79,8 +79,8 @@ class UserTabBarController: UITabBarController {
     
     // Create the tab for reading announcments
     func createAnnouncementsTab() -> UIViewController {
-        let pageViewController:AnnouncmentsController =
-            AnnouncmentsController(options: nil, frame: CGRect(x: 0, y: NAVIGATION_BAR_HEIGHT + STATUS_BAR_HEIGHT, width: self.view.frame.width, height: self.view.frame.height - STATUS_BAR_HEIGHT - NAVIGATION_BAR_HEIGHT - TAB_BAR_HEIGHT))
+        let pageViewController:AnnouncementsController =
+            AnnouncementsController(options: nil, frame: CGRect(x: 0, y: NAVIGATION_BAR_HEIGHT + STATUS_BAR_HEIGHT, width: self.view.frame.width, height: self.view.frame.height - STATUS_BAR_HEIGHT - NAVIGATION_BAR_HEIGHT - TAB_BAR_HEIGHT))
         
         //Set the icon for the TabViewController to use
         //TODO: Get a real icon

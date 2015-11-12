@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class AnnouncmentsController: UITableViewController {
+class AnnouncementsController: UITableViewController {
     var frame:CGRect?
     var announcements:[Announcement]?
     
@@ -21,15 +21,21 @@ class AnnouncmentsController: UITableViewController {
     }
     
     required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        super.init(coder: aDecoder)!
     }
     
     override func viewDidLoad() {
         // TODO: use preprocessor flags to swap out a real URL for production.
         // This requires a rails server to be hosting the backend on your dev machine.
         let url = "http://localhost:3000/announcements.json"
-        var json:NSArray = JSONHelper.parse(HTTPHelper.get(url)) as! NSArray
-        announcements = Announcement.collectionFromJSON(json)
+        let json:NSArray
+        do {
+            json = try JSONHelper.parse(HTTPHelper.get(url)) as! NSArray
+            announcements = Announcement.collectionFromJSON(json)
+        } catch is NSError {
+            announcements = [Announcement]()
+            print("Error: Unable to load announcements")
+        }
         self.view.frame = frame!
         self.tableView.reloadData()
     }

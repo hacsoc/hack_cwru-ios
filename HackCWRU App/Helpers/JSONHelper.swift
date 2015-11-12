@@ -13,7 +13,7 @@ class JSONHelper {
     // for knowing how the data should be structured and casting appropriately.
     //
     // :data: - the data to be parsed.
-    class func parse(data:NSData) -> AnyObject {
-        return NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil)!
+    class func parse(data:NSData) throws -> AnyObject {
+        return try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers)
     }
 }

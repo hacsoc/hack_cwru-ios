@@ -19,8 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        //Crashylytics hook, always keep at end
-        Crashlytics.startWithAPIKey("479c2e2984369c33402ef64007433deaa5acebe9")
         return true
     }
 

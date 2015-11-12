@@ -15,13 +15,12 @@ class HTTPHelper {
     //
     // :url: - The URL to which to send the request.
     // :params: (optional) - Any query params to append to the URL.
-    class func get(url: String, params: NSDictionary = NSDictionary()) -> NSData {
+    class func get(url: String, params: NSDictionary = NSDictionary()) throws -> NSData {
         let url = NSURL(string: url + self.queryString(params))!
         let request = NSURLRequest(URL: url)
-        var response:AutoreleasingUnsafeMutablePointer<NSURLResponse?> = nil
-        var error:NSErrorPointer = nil
+        let response:AutoreleasingUnsafeMutablePointer<NSURLResponse?> = nil
         
-        return NSURLConnection.sendSynchronousRequest(request, returningResponse: response, error: error)!
+        return try NSURLConnection.sendSynchronousRequest(request, returningResponse: response)
     }
     
     // Return a query string to be appended to a URL.
@@ -37,6 +36,6 @@ class HTTPHelper {
         for (k, v) in params {
             query.append("\(k)=\(v)")
         }
-        return "?" + join("&", query)
+        return "?" + query.joinWithSeparator("&")
     }
 }
