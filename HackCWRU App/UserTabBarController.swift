@@ -51,6 +51,7 @@ class UserTabBarController: UITabBarController {
         var tabControllers = [UIViewController]()
         
         //Append your tab to teh controllers, yo
+        tabControllers.append(self.createAnnouncementsTab())
         tabControllers.append(self.createAttendeeInformationTab())
         
         self.setViewControllers(tabControllers, animated: true)
@@ -72,6 +73,21 @@ class UserTabBarController: UITabBarController {
         //Set the icon for the TabViewController to use
         //TODO: Insert real icon for the StaticPages. And come up with a better name than StaticPages.
         pageViewController.tabBarItem = UITabBarItem(title: "Attendee Information", image: UIImage(named: "settings") , selectedImage: UIImage(named: "settings"))
+        
+        return pageViewController
+    }
+    
+    // Create the tab for reading announcments
+    func createAnnouncementsTab() -> UIViewController {
+        let pageViewController:AnnouncementsController =
+            AnnouncementsController(options: nil, frame: CGRect(x: 0, y: NAVIGATION_BAR_HEIGHT + STATUS_BAR_HEIGHT, width: self.view.frame.width, height: self.view.frame.height - STATUS_BAR_HEIGHT - NAVIGATION_BAR_HEIGHT - TAB_BAR_HEIGHT))
+        
+        //Set the icon for the TabViewController to use
+        //TODO: Get a real icon
+        pageViewController.tabBarItem =
+            UITabBarItem(title: "Announcements",
+                        image: UIImage(named: "settings"),
+                        selectedImage: UIImage(named: "settings"))
         
         return pageViewController
     }
